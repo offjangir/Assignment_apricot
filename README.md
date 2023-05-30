@@ -36,8 +36,8 @@ sudo apt-get install ros-noetic-hector-slam
 roslaunch ar1_description main.launch
 ```
 <div>
-  <img src="images/gaz.png" alt="Image 1" width="700" />
-  <img src="images/rviz.png" alt="Image 2" width="700" />
+  <img src="images/gaz.png" alt="Image 2" width="700" />
+  <img src="images/rviz.png" alt="Image 3" width="700" />
 </div>
 
 ## About the Robot - Given in the Assignment
@@ -75,7 +75,7 @@ roslaunch ar1_description main.launch
 ## Task 2 Navigation Stack and Mapping
 
 <div style="text-align:center;">
-  <img src="images/mapping.gif" alt="Image 1" style="display:block; margin:auto;" width="800" />
+  <img src="images/mapping.gif" alt="Image 4" style="display:block; margin:auto;" width="800" />
 </div>
 
 
@@ -133,7 +133,7 @@ rosrun map_server map_server ar1_description/params/warehouse_map_hector.yaml
 
 
 <div style="text-align:center;">
-  <img src="images/navigation.gif" alt="Image 1" style="display:block; margin:auto;" width="800" />
+  <img src="images/navigation.gif" alt="Image 5" style="display:block; margin:auto;" width="800" />
 </div>
 
 ## Task 3 Script to send goal points
@@ -154,5 +154,5 @@ rosrun ar1_description waypoints.py
 rosrun ar1_description marker.py
 ```
 <div style="text-align:center;">
-  <img src="images/maker.gif" alt="Image 1" style="display:block; margin:auto;" width="800" />
+  <img src="images/maker.gif" alt="Image 6" style="display:block; margin:auto;" width="800" />
 </div>
