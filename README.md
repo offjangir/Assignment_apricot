@@ -9,6 +9,9 @@ Make Sur you have installed ROS Noetic on Ubuntu 20.04 - http://wiki.ros.org/noe
   <img src="images/intro.gif" alt="Image 1" style="display:block; margin:auto;" width="800" />
 </div>
 
+![My Image](images/intro.webp)
+
+
 # Setup
 
 Clone the repository into your workspace
