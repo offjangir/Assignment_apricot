@@ -1,0 +1,11 @@
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro $(find ar1_description)/urdf/ar1.xacro"/>
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -z 0.1 -model ar1"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <param name="use_gui" value="False" />
+    </node>
+    <include file="$(find aws_robomaker_small_warehouse_world)/launch/no_roof_small_warehouse.launch" />
+    <!-- Rviz-->
+    <node pkg="rviz" name="rviz" type="rviz" args="-d $(find ar1_description)/config/ar1.rviz" />
+</launch>
